@@ -101,7 +101,7 @@
 		},
 		"build-deb": {
 			"name": "Build Debian Package",
-			"container": "debian:bullseye",
+			"container": "debian:bookworm",
 			"runs-on": "ubuntu-latest",
 			"needs": [
 				"check",
@@ -391,7 +391,7 @@
 		},
 		"repo-deb": {
 			"name": "Update Debian package repository",
-			"container": "debian:bullseye",
+			"container": "debian:bookworm",
 			"runs-on": "ubuntu-latest",
 			"needs": [
 				"release",
